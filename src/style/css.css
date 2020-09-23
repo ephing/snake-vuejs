@@ -1,0 +1,191 @@
+#vuewrapper {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: #182025;
+}
+
+.header_title {
+	text-align: center;
+	letter-spacing: .1em;
+	color: #ec8d2e;
+}
+
+.top-level-container {
+	text-align: center;
+}
+
+.gridrow {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.grid-container {
+	margin: 10px;
+	justify-content: center;
+}
+
+#diminput {
+	color: #fff;
+	font-size: 20px;
+}
+
+#diminput input {
+	border: 1px solid #204a61;
+	background: none;
+	color: #fff;
+	font-size: 20px;
+	text-align:center;
+	padding: 10px 0px;
+	width: 5%;
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+#start-btn {
+	/*width: 70px;
+	height: 20px;
+	margin: 10px;*/
+	border: none;
+}
+
+#ai-btn {
+	/*width: 70px;
+	height: 20px;
+	margin: 10px;*/
+	border: none;
+}
+
+.hasai {
+	background-color: green;
+}
+
+.noai {
+	background-color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.instructions {
+	white-space: pre;
+}
+
+#endcredits {
+	color: white;
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 100px;
+	padding: 100px;
+}
+
+/*********CELLS**********
+*************************/
+.cell-component {
+	
+}
+
+.cell-component.emptycell {
+	background-color: #182025;
+	border: 1px solid #1d272e;
+}
+
+.cell-component.snakecell {
+	background-color: #05ff3f;
+	border: 1px solid #18b53c;
+}
+
+.cell-component.foodcell {
+	background-color: red;
+	border: 1px solid darkred;
+}
+/*******END CELLS********
+*************************/
+
+/********HR LINES********
+*************************/
+.separator--line {
+	border: 0;
+	border-bottom: 5px solid #ec8d2e;
+	width: 0;
+	-webkit-animation: separator-width 1s ease-out forwards;
+	animation: separator-width 1s ease-out forwards;
+}
+
+.separator--dot {
+	border: 0;
+	border-bottom: 5px dotted #ec8d2e;
+	width: 0;
+	-webkit-animation: separator-width 1.5s ease-out forwards;
+	animation: separator-width 1.5s ease-out forwards;
+}
+
+@-webkit-frames separator-width {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes separator-width {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes dot-move-right {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 32px;
+	}
+}
+
+@keyframes dot-move-right {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 32px;
+	}
+}
+
+@-webkit-keyframes dot-move-left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -32px;
+	}
+}
+
+@keyframes dot-move-left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -32px;
+	}
+}
+/****END OF HR LINES*****
+*************************/
